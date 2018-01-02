@@ -255,7 +255,7 @@ def transformX0(x0,LB,UB):
 	
 	return np.array(x0u)
 
-def printAttr(name,attr,maxL=5):
+def printAttr(name,attr,maxL=100):
 
 	"""Prints single attribute in the form attributeName = attributeValue.
 	
@@ -311,7 +311,7 @@ def getArrayDetailsString(l):
 	
 	return "Array of shape " + str(l.shape)
 
-def printDict(dic,maxL=5):
+def printDict(dic,maxL=100):
 	
 	"""Prints all dictionary entries in the form key = value.
 	
