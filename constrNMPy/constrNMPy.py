@@ -330,3 +330,12 @@ def printDict(dic,maxL=5):
 		printAttr(k,dic[k],maxL=maxL)
 		
 	return True
+def getDict(dic,maxL=100):
+	
+	
+	list1=[]
+	for k in dic.keys():
+		if k=='xopt':
+			list1.append(dic[k])
+		
+	return list1
