@@ -57,7 +57,7 @@ def constrNM(func,x0,LB,UB,args=(),xtol=0.0001, ftol=0.0001, maxiter=None, maxfu
 	
 	# Check if x0 is within bounds
 	for i,x in enumerate(x0):
-		if not ((x>LB[i] or LB[i]==None) and (x<UB[i] or UB[i]==None)):
+		if not ((x>=LB[i] or LB[i]==None) and (x<=UB[i] or UB[i]==None)):
 			errStr='Initial guess x0['+str(i)+']='+str(x)+' out of bounds.'
 			raise ValueError(errStr)
 	
